@@ -1,2 +1,2 @@
-import { Provider, Consumer } from "./ServiceContrxt";
-export default { Provider, Consumer };
+import { ProviderItems, ConsumerItems } from "./ServiceContext";
+export default { ProviderItems, ConsumerItems };
