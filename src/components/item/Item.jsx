@@ -10,9 +10,9 @@ const Item = ({ item }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
-        sx={{ height: 140 }}
-        image="https://corp.wtcmoscow.ru/upload/iblock/2ac/111455903_m.jpg"
-        title="green iguana"
+        sx={{ height: 240 }}
+        image={item.imageURL}
+        title={item.title}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import Item from "../item";
+import "./scss/item-list.css";
 
 export default class ItemList extends Component {
   render() {
     const { items } = this.props;
     return (
-      <ul>
+      <div className="item-list">
         {items.map((item) => {
           return (
-            <li key={item.id}>
+            <div key={item.id}>
               <Item item={item}></Item>
-            </li>
+            </div>
           );
         })}
-      </ul>
+      </div>
     );
   }
 }

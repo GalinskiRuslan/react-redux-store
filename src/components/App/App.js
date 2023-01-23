@@ -1,10 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Container from "@mui/material/Container";
-import Item from "../item";
+import ItemList from "../item-list/ItemList";
 
 const App = () => {
-  const tasks = useSelector((state) => state.itemReducers.items );
+  const tasks = useSelector((state) => state.itemReducers.itemList);
+
   return (
     <Container maxWidth="lg">
       <button
@@ -14,7 +15,7 @@ const App = () => {
       >
         111
       </button>
-      <Item item={tasks[0]}/>
+      <ItemList items={tasks} />
     </Container>
   );
 };
